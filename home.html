@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifeline Voyage</title>
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvE3FhQATX8Fsdz6dADw3NFT1MDNOgih8ZIQ&s" type="image/x-icon">
+
+    <!-- DaisyUi Tailwind link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- css link -->
+     <link rel="stylesheet" href="../styles/home.css">
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#01453f',
+                'txt-primary': 'white',
+              }
+            }
+          }
+        }
+      </script>
+      
+</head>
+<body>
+  <header>
+    <nav class="bg-primary px-14">
+        <ul class="grid grid-cols-3 items-center">
+            <div>
+                <img class="w-36" src="../assets/logo.png" alt="">
+            </div>
+            <div>
+              <ul id="nav-bar" class="grid grid-cols-2 lg:grid-cols-4">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="">Packages</a></li>
+                <li class="mt-2 lg:mt-0"><a href="">Booking</a></li>
+                <li class="mt-2 lg:mt-0"><a href="">Destination</a></li>
+              </ul>
+            </div>
+            <div>
+              <ul id="nav-bar" class="flex justify-end gap-5">
+                <li class="nav-btn"><a href="login.html"><button>Login</button></a></li>
+                <li class="nav-btn"><a href="about.html"><button>Sign Up</button></a></li>
+              </ul>
+            </div>
+        </ul>
+    </nav>
+
+    <!-- banner section -->
+ <section class="home" id="home">
+  <div class="home-text">
+      <h1>Fuel Mind<br>Travel</h1>
+      <p>Enthusiastically extend extensive customer service before<br>
+      best breed convergence completely.</p>
+      <a href="#" class="home-btn">Let's go now</a>
+  </div>
+</section>
+  </header> 
+
+  
+
+<!-- Main Section  -->
+  <main>
+    
+  </main>
+
+  <!-- Footer Section  -->
+  <footer class="footer bg-black text-[#FFFFFF99] py-10 items-center justify-around mt-10">
+    <div>
+        <div class="logo flex gap-3 items-center mb-3">
+            <img class="w-40 h-20" src="../assets/logo.png">
+        </div>
+      <a class="link link-hover">Location: cantonment, Bayezid, Chattogram</a>
+      <a class="link link-hover">Phone: 01846152387</a>
+      <a class="link link-hover">Email: maimunarashid211@gmail.com</a>
+      <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+      <div class="flex gap-3">
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png"> </a>
+        <a href=""><img class="w-10" src="../assets/twitter-logo-png.png"> </a>
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=19318&format=png"> </a>
+        <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png"> </a>
+      </div>
+    </div>
+    <div>
+      <h6 class="text-xl font-bold text-[#FFFFFFE6] mb-3">Useful Links</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+    </div>
+    <div>
+      <h6 class="text-xl font-bold text-[#FFFFFFE6]  mb-3">Drop a Message</h6>
+      <input type="email" placeholder="Enter your email" class="text-black w-44 px-2 py-2 rounded-lg bg-[#FFFFFF33]">
+      <button class="text-white font-bold bg-[#0E7A81] w-44 px-8 py-2 rounded-lg">Subscribe</button>
+    </div>
+</footer>
+
+
+    <!-- Scripts links  -->
+     <script src="../scripts/home.js"></script>
+</body>
+</html>

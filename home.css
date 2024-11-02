@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+  top: 0;
+}
+
+nav a:hover{
+    background: white;
+    color: #01453f;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+nav a{
+    color: white;
+    font-weight: 500;
+}
+
+#about span{
+    color: #01453f;
+    font-size: 17px;
+}
+button{
+    background-color: white;
+    color: #01453f;
+}
+
+
