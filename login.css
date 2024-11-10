@@ -9,8 +9,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
-    background:rgb(21, 86, 86); 
+    min-height:100vh;background: #01453f;
 }
 .wrapper{
     position: relative;

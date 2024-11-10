@@ -35,27 +35,24 @@
 
  <header class="sticky">
         <div>
-            <img class="w-36" src="images/logo.png" alt="">
+            <img class="w-70" src="images/logo.png" alt="">
         </div>
-    
         <div class="bx bx-menu" id="menu-icon"></div>
-            <div>
-              <ul id="nav-bar" class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="">Packages</a></li>
-                <li class="mt-2 lg:mt-0"><a href="">Booking</a></li>
-                <li class="mt-2 lg:mt-0"><a href="">Destination</a></li>
-              </ul>
-            </div>
-            <div>
-                <ul id="nav-bar" class="flex justify-end gap-5">
-                  <li class="nav-btn"><a href="login.html"><button>Login</button></a></li>
-                  <li class="nav-btn"><a href="signup.html"><button>Sign Up</button></a></li>
-                </ul>
-              </div>
+
+        <ul class="navbar">
+            <li><a href="demo.html">Home</a></li>
+            <li><a href="package.html">Package</a></li>
+            <li><a href="#Booking">Booking</a></li>
+            <li><a href="destinations.html">Destination</a></li>
+        </ul>
+        <ul id="nav-bar" class="flex justify-end gap-4">
+            <li class="navbar"><a href="login.html"><button >Login</button></a></li>
+            <li class="navbar"><a href="signup.html"><button>SignUp</button></a></li>
+        </ul>
 </header>
-<!-- home section -->
+<!-- Banner section -->
  <section class="home" id="home">
+    <video class="vedio-slide" src="images/background-vdo.mp4" autoplay muted loop></video>
     <div class="home-text">
         <h1>Fuel Mind<br>Travel</h1>
         <p>Enthusiastically extend extensive customer service before<br>
@@ -63,94 +60,87 @@
         <a href="#" class="home-btn">Let's go now</a>
     </div>
  </section>
-<!-- container -->
+
+ <!-- Main  -->
+  <main>
+    <!-- container -->
  <section class="container">
-    <div class="text">
-        <h2>Start Your Vacation <br> with Lots os Services!</h2>
+  <div class="text">
+      <h2>Start Your Vacation <br> with Lots of Services!</h2>
+  </div>
+  <div class="row-items">
+      <div class="container-box">
+          <div class="container-img">
+              <img src="images/trip1.png">
+          </div>
+          <h4>Ship Cruises</h4>
+          <p>150 Properties</p>
+      </div>
+
+      <div class="container-box">
+          <div class="container-img">
+              <img src="images/trip2.png">
+          </div>
+          <h4>Food Tours</h4>
+          <p>150 Properties</p>
+      </div>
+
+      <div class="container-box">
+          <div class="container-img">
+              <img src="images/trip3.png">
+          </div>
+          <h4>Summer Rest</h4>
+          <p>150 Properties</p>
+      </div>
+
+      <div class="container-box">
+          <div class="container-img">
+              <img src="images/trip4.png">
+          </div>
+          <h4>Mountains tours</h4>
+          <p>150 Properties</p>
+      </div>
+
+  </div>
+</section> 
+
+<!-- infinite autoplay slider  -->
+<section class="slider py-6">
+  <div class="slider-track flex">
+    <div class="slide">
+      <img src="images/Ahsan Manzil.jpg">
     </div>
-    <div class="row-items">
-        <div class="container-box">
-            <div class="container-img">
-                <img src="images/trip1.png">
-            </div>
-            <h4>Ship Cruises</h4>
-            <p>150 Properties</p>
-        </div>
-
-        <div class="container-box">
-            <div class="container-img">
-                <img src="images/trip2.png">
-            </div>
-            <h4>Food Tours</h4>
-            <p>150 Properties</p>
-        </div>
-
-        <div class="container-box">
-            <div class="container-img">
-                <img src="images/trip3.png">
-            </div>
-            <h4>Summer Rest</h4>
-            <p>150 Properties</p>
-        </div>
-
-        <div class="container-box">
-            <div class="container-img">
-                <img src="images/trip4.png">
-            </div>
-            <h4>Mountains tours</h4>
-            <p>150 Properties</p>
-        </div>
-
+    <div class="slide">
+      <img src="images/Dhanmondi Lake.jpg">
     </div>
- </section>  
+    <div class="slide">
+      <img src="images/haor.jpg">
+    </div>
+    <div class="slide">
+      <img src="images/Lalbagh Fort.jpg">
+    </div>
+    <div class="slide">
+      <img src="images/Inani Beach.jpg">
+    </div>
+    <div class="slide">
+      <img src="images/National Museum.jpg">
+    </div>
+    <div class="slide">
+      <img src="images/Patenga Beach.jpg">
+    </div>
+    <div class="slide">
+      <img src="images/Sonargaon.jpg">
+    </div>
+    <div class="slide">
+      <img src="images/zinda park.webp">
+    </div>
+    <div class="slide">
+      <img src="images/Chandranath Temple.jpeg">
+    </div>
+  </div>
+</section>
+  </main>
 
- <!-- Package section -->
-  <section class="package" id="package">
-    <div class="title">
-        <h2>Our Upcoming<br>Tour Package</h2>
-    </div>
-    <div class="package-content">
-        <div class="box">
-            <div class="thum"><img src="images/sundorbon.jpg" >
-            <h3>$499</h3>
-            </div>
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Sundarban</h4>
-                    <p>4h - 5h</p>
-                </div>
-                <div class="stars">
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="thum"><img src="images/haor.jpg" width="400">
-            <h3>$499</h3>
-            </div>
-            <div class="dest-content">
-                <div class="location">
-                    <h4>Tanguar Haor</h4>
-                    <p>4h - 5h</p>
-                </div>
-                <div class="stars">
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                    <a href="#"><i class='bx bxs-star'></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-    <!-- link to js -->
-     <script type="text/javascript" src="script.js"></script>
-</body>
 
  <!-- Footer Section  -->
  <footer class="footer bg-black text-[#FFFFFF99] py-10 items-center justify-around mt-10">
@@ -181,4 +171,9 @@
       <button class="text-white font-bold bg-[#0E7A81] w-44 px-8 py-2 rounded-lg">Subscribe</button>
     </div>
 </footer>
+
+<!-- link to js -->
+<script type="text/javascript" src="script.js"></script>
+    
+</body>
 </html>

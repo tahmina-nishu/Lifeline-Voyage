@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvE3FhQATX8Fsdz6dADw3NFT1MDNOgih8ZIQ&s" type="image/x-icon">
+
+    <!-- DaisyUi Tailwind link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#01453f',
+                'txt-primary': 'white',
+              }
+            }
+          }
+        }
+      </script>
+
+      <style>
+        img{
+          max-height: 500px;
+        }
+      </style>
+
+</head>
+<body>
+<!-- header -->
+
+<header class="sticky">
+  <div>
+      <img class="w-70" src="images/logo.png" alt="">
+  </div>
+  <div class="bx bx-menu" id="menu-icon"></div>
+
+  <ul class="navbar">
+      <li><a href="demo.html">Home</a></li>
+      <li><a href="package.html">Package</a></li>
+      <li><a href="#Booking">Booking</a></li>
+      <li><a href="destinations.html">Destination</a></li>
+  </ul>
+  <ul id="nav-bar" class="flex justify-end gap-4">
+      <li class="navbar"><a href="login.html"><button >Login</button></a></li>
+      <li class="navbar"><a href="signup.html"><button>SignUp</button></a></li>
+    </ul>
+
+        </div>
+</header>    
+ <main class="mx-20">
+  <div class="flex flex-col items-center justify-center w-1/2 mx-auto text-center mt-20 gap-6">
+    <h1 class="text-4xl font-bold"> Explore the Wonders of Bangladesh</h1>
+    <p class="text-slate-500">Discover the rich tapestry of Bangladesh, a land of vibrant culture and stunning landscapes. From the serene beauty of the Sundarban mangrove forest, home to the majestic Bengal tiger, to the bustling streets of Dhaka filled with history and flavor, Bangladesh offers a unique blend of adventure and tranquility. Explore ancient temples, pristine beaches, and lush tea gardens while experiencing the warm hospitality of its people..</p>
+  </div>
+
+<!-- ----------------------------------------------------------------PLACES CARD START---------------------------------------------------- -->
+
+   <div class="w-10/12 mx-auto py-3 flex justify-between items-center">
+       <h3 class="text-2xl font-bold">Best Deal For you</h3>
+       <button onclick="sortByPrice()" class="text-white font-bold bg-[#0E7A81] px-6 py-2 rounded-lg my-10">Sort by Price</button>
+   </div>
+
+   
+       <!-- spinner  -->
+       <div id="spinner" class="flex justify-center hidden">
+         <span class="loading loading-bars loading-lg"></span>
+       </div>
+
+   <!-- place container -->
+    <div class="w-10/12  py-10 mx-auto flex gap-5">
+       <!-- District div  -->
+       <div id="districts" class=" w-1/4 flex flex-col gap-4 text-2xl text-[#131313] items-center justify-center h-fit font-bold mx-auto">
+          
+       </div>
+
+       <!-- all places  -->
+       <div id="place-container" class="w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto justify-between">
+        
+
+       </div>
+    </div>
+</main>
+
+<!-- Open the modal using ID.showModal() method -->
+<button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal"> <!--  modal er id te hyphen use kora jayna -->
+ <div class="modal-box">
+   <div id="modal-content">
+
+   </div>
+
+   <div class="modal-action">
+     <form method="dialog">
+       <!-- if there is a button in form, it will close the modal -->
+       <button class="w-[380px] md:w-[400px] lg:w-[460px] px-auto py-1 bg-[#0E7A811A] border-2 border-[#0E7A8133] rounded-lg text-[#0E7A81] text-lg font-bold">Cancel</button>
+     </form>
+   </div>
+ </div>
+</dialog>
+<!-- ------------------------------------------------------------------PLACES CARD END-------------------------------------------------------  -->
+ </main>
+    
+
+<!-- Footer Section  -->
+<footer class="footer bg-black text-[#FFFFFF99] py-10 items-center justify-around mt-10">
+  <div>
+      <div class="logo flex gap-3 items-center mb-3">
+          <img class="w-40 h-20" src="images/logo.png">
+      </div>
+    <a class="link link-hover">Location: cantonment, Bayezid, Chattogram</a>
+    <a class="link link-hover">Phone: 01846152387</a>
+    <a class="link link-hover">Email: maimunarashid211@gmail.com</a>
+    <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+    <div class="flex gap-3">
+      <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=uLWV5A9vXIPu&format=png"> </a>
+      <a href=""><img class="w-10" src="images/twitter-logo-png.png"> </a>
+      <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=19318&format=png"> </a>
+      <a href=""><img class="w-10" src="https://img.icons8.com/?size=48&id=Xy10Jcu1L2Su&format=png"> </a>
+    </div>
+  </div>
+  <div>
+    <h6 class="text-xl font-bold text-[#FFFFFFE6] mb-3">Useful Links</h6>
+    <a class="link link-hover">Home</a>
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+  </div>
+  <div>
+    <h6 class="text-xl font-bold text-[#FFFFFFE6]  mb-3">Drop a Message</h6>
+    <input type="email" placeholder="Enter your email" class="text-black w-44 px-2 py-2 rounded-lg bg-[#FFFFFF33]">
+    <button class="text-white font-bold bg-[#0E7A81] w-44 px-8 py-2 rounded-lg">Subscribe</button>
+  </div>
+</footer>
+
+<script src="places.js"></script>
+</body>
+</html>
